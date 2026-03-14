@@ -3,15 +3,420 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Growth Code Port</title>
+  <title>GrowthCode Studio – Sites que Vendem</title>
+  <meta name="description" content="Criamos sites modernos, rápidos e otimizados para transformar visitantes em clientes. GrowthCode Studio." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Growth Code Port</h1>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-icon"><i class="fa-solid fa-bolt"></i></div>
+        <span>GrowthCode<strong>Studio</strong></span>
+      </a>
+      <nav class="nav__links">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </nav>
+      <a href="#contato" class="btn btn--nav">Solicitar Orçamento</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato" class="btn btn--nav">Solicitar Orçamento</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__dot-pattern"></div>
+    <div class="container hero__inner">
+      <div class="hero__left">
+        <div class="hero__badge">
+          <i class="fa-solid fa-sparkles"></i> Novo: Entrega em 7 dias úteis
+        </div>
+        <h1 class="hero__title">
+          Sites que<br /><span class="hero__title--outline">Transformam</span><br />Visitantes em Clientes
+        </h1>
+        <p class="hero__sub">
+          Criamos sites modernos, rápidos e otimizados para gerar resultados reais. Do design à performance, tudo para o seu negócio crescer.
+        </p>
+        <div class="hero__cta">
+          <a href="#contato" class="btn btn--hero-primary">
+            Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#projetos" class="btn btn--hero-secondary">Ver Projetos</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><strong>+120</strong><span>Projetos Entregues</span></div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat"><strong>98%</strong><span>Clientes Satisfeitos</span></div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat"><strong>7 dias</strong><span>Prazo de Entrega</span></div>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="browser-mockup">
+          <div class="browser-mockup__bar">
+            <span class="browser-dot" style="background:#ff5f57"></span>
+            <span class="browser-dot" style="background:#8b5cf6"></span>
+            <span class="browser-dot" style="background:#7c3aed"></span>
+            <div class="browser-url">growthcode.studio</div>
+          </div>
+          <div class="browser-mockup__content">
+            <div class="mock-header">
+              <div class="mock-logo"></div>
+              <div class="mock-nav">
+                <div class="mock-line mock-line--sm"></div>
+                <div class="mock-line mock-line--sm"></div>
+                <div class="mock-line mock-line--sm"></div>
+              </div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-hero-area">
+              <div class="mock-hero-text">
+                <div class="mock-line mock-line--lg"></div>
+                <div class="mock-line mock-line--md"></div>
+                <div class="mock-line mock-line--sm" style="width:60%"></div>
+              </div>
+              <div class="mock-hero-card">
+                <div class="mock-card-label">Conversões</div>
+                <div class="mock-chart">
+                  <div class="mock-bar" style="height:40%"></div>
+                  <div class="mock-bar" style="height:65%"></div>
+                  <div class="mock-bar" style="height:55%"></div>
+                  <div class="mock-bar mock-bar--active" style="height:85%"></div>
+                  <div class="mock-bar" style="height:75%"></div>
+                </div>
+                <div class="mock-card-value">+247%</div>
+              </div>
+            </div>
+            <div class="mock-grid">
+              <div class="mock-grid-card mock-grid-card--purple">
+                <div class="mock-line mock-line--sm"></div>
+                <div class="mock-line mock-line--md"></div>
+              </div>
+              <div class="mock-grid-card">
+                <div class="mock-line mock-line--sm"></div>
+                <div class="mock-line mock-line--md"></div>
+              </div>
+              <div class="mock-grid-card mock-grid-card--dark">
+                <div class="mock-line mock-line--sm" style="background:rgba(255,255,255,.3)"></div>
+                <div class="mock-line mock-line--md" style="background:rgba(255,255,255,.2)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>BRANDING</span><span>★</span>
+      <span>LANDING PAGE</span><span>★</span>
+      <span>E-COMMERCE</span><span>★</span>
+      <span>SEO</span><span>★</span>
+      <span>PERFORMANCE</span><span>★</span>
+      <span>UI / UX</span><span>★</span>
+      <span>IDENTIDADE VISUAL</span><span>★</span>
+      <span>SITES INSTITUCIONAIS</span><span>★</span>
+      <span>BRANDING</span><span>★</span>
+      <span>LANDING PAGE</span><span>★</span>
+      <span>E-COMMERCE</span><span>★</span>
+      <span>SEO</span><span>★</span>
+      <span>PERFORMANCE</span><span>★</span>
+      <span>UI / UX</span><span>★</span>
+      <span>IDENTIDADE VISUAL</span><span>★</span>
+      <span>SITES INSTITUCIONAIS</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ===== PROBLEM VS SOLUTION ===== -->
+  <section class="pvs section" id="servicos">
+    <div class="container">
+      <div class="section__head">
+        <div class="section__tag">O Problema</div>
+        <h2 class="section__title">Seu site está te <span>custando</span> clientes?</h2>
+      </div>
+      <div class="pvs__grid">
+        <div class="pvs__card pvs__card--problem">
+          <div class="pvs__card-label"><i class="fa-solid fa-xmark"></i> Sem GrowthCode</div>
+          <ul class="pvs__list">
+            <li><i class="fa-solid fa-xmark"></i> Site lento e desatualizado</li>
+            <li><i class="fa-solid fa-xmark"></i> Não aparece no Google</li>
+            <li><i class="fa-solid fa-xmark"></i> Péssima experiência no celular</li>
+            <li><i class="fa-solid fa-xmark"></i> Zero conversões</li>
+            <li><i class="fa-solid fa-xmark"></i> Design genérico sem identidade</li>
+            <li><i class="fa-solid fa-xmark"></i> Suporte inexistente após entrega</li>
+          </ul>
+        </div>
+        <div class="pvs__card pvs__card--solution">
+          <div class="pvs__card-label"><i class="fa-solid fa-check"></i> Com GrowthCode</div>
+          <ul class="pvs__list">
+            <li><i class="fa-solid fa-check"></i> Site ultra-rápido (nota 100 no PageSpeed)</li>
+            <li><i class="fa-solid fa-check"></i> SEO técnico desde a primeira linha</li>
+            <li><i class="fa-solid fa-check"></i> 100% responsivo e mobile-first</li>
+            <li><i class="fa-solid fa-check"></i> Otimizado para converter visitantes</li>
+            <li><i class="fa-solid fa-check"></i> Design exclusivo e profissional</li>
+            <li><i class="fa-solid fa-check"></i> Suporte incluso por 3 meses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features section">
+    <div class="container">
+      <div class="section__head section__head--light">
+        <div class="section__tag section__tag--dark">Nossos Diferenciais</div>
+        <h2 class="section__title section__title--white">Tudo que seu site<br />precisa para vender</h2>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon"><i class="fa-solid fa-paintbrush"></i></div>
+          <h3>Design Exclusivo</h3>
+          <p>Cada projeto é criado do zero, com identidade visual única para o seu negócio.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="1">
+          <div class="feature-card__icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Alta Performance</h3>
+          <p>Sites otimizados com nota 95+ no Google PageSpeed, carregando em menos de 2 segundos.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="2">
+          <div class="feature-card__icon"><i class="fa-brands fa-google"></i></div>
+          <h3>SEO Técnico</h3>
+          <p>Estrutura otimizada para o Google desde o código, para você aparecer nas primeiras posições.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Mobile-First</h3>
+          <p>Design pensado primeiro para o celular, onde mais de 70% dos acessos acontecem.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="1">
+          <div class="feature-card__icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>Suporte Incluso</h3>
+          <p>3 meses de suporte gratuito após a entrega. Você nunca fica na mão.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="2">
+          <div class="feature-card__icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Entrega em 7 Dias</h3>
+          <p>Processo ágil e eficiente. Seu site no ar em até 7 dias úteis após aprovação do briefing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how section" id="como-funciona">
+    <div class="container">
+      <div class="section__head">
+        <div class="section__tag">Processo</div>
+        <h2 class="section__title">Como funciona?</h2>
+        <p class="section__sub">Simples, rápido e transparente. Do briefing ao ar em 3 etapas.</p>
+      </div>
+      <div class="how__steps">
+        <div class="how__step" data-reveal>
+          <div class="how__step-num" style="--clr:#c4b5fd">01</div>
+          <div class="how__step-body">
+            <h3>Briefing & Estratégia</h3>
+            <p>Entendemos seu negócio, público-alvo e objetivos. Definimos juntos a estrutura ideal para converter.</p>
+          </div>
+        </div>
+        <div class="how__connector"></div>
+        <div class="how__step" data-reveal data-reveal-delay="1">
+          <div class="how__step-num" style="--clr:#7c3aed">02</div>
+          <div class="how__step-body">
+            <h3>Design & Desenvolvimento</h3>
+            <p>Criamos o design exclusivo e desenvolvemos o site com código limpo, rápido e otimizado para SEO.</p>
+          </div>
+        </div>
+        <div class="how__connector"></div>
+        <div class="how__step" data-reveal data-reveal-delay="2">
+          <div class="how__step-num" style="--clr:#ffffff">03</div>
+          <div class="how__step-body">
+            <h3>Revisão & Entrega</h3>
+            <p>Você revisa, aprovamos juntos cada detalhe e publicamos o site. Suporte incluso por 3 meses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PERSONAS ===== -->
+  <section class="personas section" id="projetos">
+    <div class="container">
+      <div class="section__head">
+        <div class="section__tag">Para Quem É</div>
+        <h2 class="section__title">Para negócios que querem <span>crescer</span></h2>
+      </div>
+      <div class="personas__grid">
+        <div class="persona-card persona-card--lavender" data-reveal>
+          <div class="persona-card__badge">Empreendedor</div>
+          <div class="persona-card__icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Pequenas Empresas</h3>
+          <p>Você tem um negócio local e precisa de presença digital profissional para atrair mais clientes.</p>
+          <ul>
+            <li>Site institucional completo</li>
+            <li>Google Meu Negócio otimizado</li>
+            <li>WhatsApp integrado</li>
+          </ul>
+        </div>
+        <div class="persona-card persona-card--purple" data-reveal data-reveal-delay="1">
+          <div class="persona-card__badge">Loja Online</div>
+          <div class="persona-card__icon"><i class="fa-solid fa-bag-shopping"></i></div>
+          <h3>E-commerce</h3>
+          <p>Você quer vender online com uma loja profissional, rápida e otimizada para conversões.</p>
+          <ul>
+            <li>Loja completa com pagamentos</li>
+            <li>Checkout otimizado</li>
+            <li>Gestão de produtos</li>
+          </ul>
+        </div>
+        <div class="persona-card persona-card--dark" data-reveal data-reveal-delay="2">
+          <div class="persona-card__badge">Profissional Liberal</div>
+          <div class="persona-card__icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Freelancers & Experts</h3>
+          <p>Você quer uma landing page de alta conversão para vender seus serviços e fechar mais clientes.</p>
+          <ul>
+            <li>Landing page de alta conversão</li>
+            <li>Portfólio profissional</li>
+            <li>Formulários e capturas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="depoimentos">
+    <div class="container">
+      <div class="section__head">
+        <div class="section__tag">Depoimentos</div>
+        <h2 class="section__title">O que nossos clientes dizem</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Em menos de uma semana meu site estava no ar. O resultado superou todas as expectativas. Meu negócio cresceu 40% após o lançamento."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MR</div>
+            <div>
+              <strong>Marcos Ribeiro</strong>
+              <span>CEO, MR Consultoria</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal data-reveal-delay="1">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"A GrowthCode entendeu exatamente o que eu precisava. Site lindo, rápido e já aparecendo no Google na primeira semana. Recomendo demais!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AF</div>
+            <div>
+              <strong>Ana Ferreira</strong>
+              <span>Proprietária, Boutique AF</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal data-reveal-delay="2">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Minha taxa de conversão triplicou depois do novo site. O suporte é incrível, sempre disponíveis para ajudar. Melhor investimento que fiz."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">CL</div>
+            <div>
+              <strong>Carlos Lima</strong>
+              <span>Fundador, Lima Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final" id="contato">
+    <div class="cta-final__dot-pattern"></div>
+    <div class="container cta-final__inner">
+      <div class="section__tag section__tag--dark">Pronto para começar?</div>
+      <h2 class="cta-final__title">Seu site profissional<br />a <span>1 mensagem</span> de distância</h2>
+      <p class="cta-final__sub">Solicite seu orçamento agora. Resposta em menos de 2 horas.</p>
+      <div class="cta-final__actions">
+        <a href="https://wa.me/5527000000000" target="_blank" class="btn btn--cta-primary">
+          <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+        </a>
+        <a href="mailto:contato@growthcode.studio" class="btn btn--cta-secondary">
+          <i class="fa-solid fa-envelope"></i> Enviar E-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <a href="#" class="nav__logo footer__logo">
+          <div class="nav__logo-icon"><i class="fa-solid fa-bolt"></i></div>
+          <span>GrowthCode<strong>Studio</strong></span>
+        </a>
+        <p>Transformamos ideias em sites que vendem. Design, performance e resultados reais.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#">Landing Pages</a></li>
+          <li><a href="#">Sites Institucionais</a></li>
+          <li><a href="#">E-commerce</a></li>
+          <li><a href="#">SEO & Performance</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li><i class="fa-brands fa-whatsapp"></i> (27) 9 0000-0000</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@growthcode.studio</li>
+          <li><i class="fa-solid fa-location-dot"></i> Vila Velha, ES</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 GrowthCode Studio. Todos os direitos reservados.</p>
+        <p>Feito com <i class="fa-solid fa-heart" style="color:#7c3aed"></i> no Brasil</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
