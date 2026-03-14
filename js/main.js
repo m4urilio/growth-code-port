@@ -35,6 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.style.borderBottomColor = window.scrollY > 10 ? '#000' : '#000';
   }, { passive: true });
 
+  // --- 3D CART SCROLL ROTATION ---
+  const cart3d = document.getElementById('cart3d');
+  const featuresSection = document.getElementById('features');
+  if (cart3d && featuresSection) {
+    window.addEventListener('scroll', () => {
+      const rect = featuresSection.getBoundingClientRect();
+      const sectionH = featuresSection.offsetHeight;
+      const progress = Math.max(0, Math.min(1, (-rect.top + window.innerHeight * 0.5) / sectionH));
+      const rotY = progress * 120;
+      cart3d.querySelector('.cart3d__scene').style.transform = `rotateX(-22deg) rotateY(${rotY}deg)`;
+    }, { passive: true });
+  }
+
   // --- SMOOTH CLOSE NAV ON LINK CLICK ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

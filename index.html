@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GrowthCode Studio – Sites que Vendem</title>
   <meta name="description" content="Criamos sites modernos, rápidos e otimizados para transformar visitantes em clientes. GrowthCode Studio." />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
@@ -72,8 +73,8 @@
         <div class="browser-mockup">
           <div class="browser-mockup__bar">
             <span class="browser-dot" style="background:#ff5f57"></span>
-            <span class="browser-dot" style="background:#8b5cf6"></span>
-            <span class="browser-dot" style="background:#7c3aed"></span>
+            <span class="browser-dot" style="background:#febc2e"></span>
+            <span class="browser-dot" style="background:#28c840"></span>
             <div class="browser-url">growthcode.studio</div>
           </div>
           <div class="browser-mockup__content">
@@ -181,12 +182,40 @@
   </section>
 
   <!-- ===== FEATURES ===== -->
-  <section class="features section">
+  <section class="features section" id="features">
     <div class="container">
       <div class="section__head section__head--light">
         <div class="section__tag section__tag--dark">Nossos Diferenciais</div>
         <h2 class="section__title section__title--white">Tudo que seu site<br />precisa para vender</h2>
       </div>
+
+      <!-- 3D Monitor -->
+      <div class="cart3d-wrap">
+        <div class="cart3d" id="cart3d">
+          <div class="cart3d__scene">
+            <!-- Monitor bezel faces -->
+            <div class="mon__face mon__face--front"></div>
+            <div class="mon__face mon__face--back"></div>
+            <div class="mon__face mon__face--left"></div>
+            <div class="mon__face mon__face--right"></div>
+            <div class="mon__face mon__face--top"></div>
+            <div class="mon__face mon__face--bottom"></div>
+            <!-- Screen -->
+            <div class="mon__screen"></div>
+            <!-- Neck -->
+            <div class="mon__neck"></div>
+            <!-- Base -->
+            <div class="mon__base"></div>
+            <!-- Keyboard -->
+            <div class="mon__kbd">
+              <div class="mon__kbd-row"></div>
+              <div class="mon__kbd-row"></div>
+              <div class="mon__kbd-row mon__kbd-row--space"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="features__grid">
         <div class="feature-card" data-reveal>
           <div class="feature-card__icon"><i class="fa-solid fa-paintbrush"></i></div>
@@ -276,6 +305,7 @@
             <li>Google Meu Negócio otimizado</li>
             <li>WhatsApp integrado</li>
           </ul>
+          <div class="persona-card__price">R$ 297,00</div>
         </div>
         <div class="persona-card persona-card--purple" data-reveal data-reveal-delay="1">
           <div class="persona-card__badge">Loja Online</div>
@@ -287,6 +317,7 @@
             <li>Checkout otimizado</li>
             <li>Gestão de produtos</li>
           </ul>
+          <div class="persona-card__price">R$ 997,00</div>
         </div>
         <div class="persona-card persona-card--dark" data-reveal data-reveal-delay="2">
           <div class="persona-card__badge">Profissional Liberal</div>
@@ -298,6 +329,7 @@
             <li>Portfólio profissional</li>
             <li>Formulários e capturas</li>
           </ul>
+          <div class="persona-card__price persona-card__price--cta">Pedir Orçamento</div>
         </div>
       </div>
     </div>
@@ -353,7 +385,7 @@
     <div class="cta-final__dot-pattern"></div>
     <div class="container cta-final__inner">
       <div class="section__tag section__tag--dark">Pronto para começar?</div>
-      <h2 class="cta-final__title">Seu site profissional<br />a <span>1 mensagem</span> de distância</h2>
+      <h2 class="cta-final__title">Seu site profissional<br />a <span>uma mensagem</span> de distância</h2>
       <p class="cta-final__sub">Solicite seu orçamento agora. Resposta em menos de 2 horas.</p>
       <div class="cta-final__actions">
         <a href="https://wa.me/5527000000000" target="_blank" class="btn btn--cta-primary">

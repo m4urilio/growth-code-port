@@ -620,6 +620,159 @@ img { display: block; max-width: 100%; }
 .pvs__card--problem .pvs__list li i { color: #ef4444; }
 
 /* ============================================================
+   3D MONITOR (cartoon)
+   ============================================================ */
+.cart3d-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 64px;
+  perspective: 1100px;
+}
+
+.cart3d {
+  width: 300px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart3d__scene {
+  width: 180px;
+  height: 120px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-22deg) rotateY(0deg);
+  transition: transform 0.08s ease-out;
+}
+
+/* ---- bezel (180 × 120 × 18 deep) ---- */
+.mon__face {
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #000;
+}
+.mon__face--front,
+.mon__face--back  { width: 180px; height: 120px; top: 0; left: 0; border-radius: 12px; }
+.mon__face--left,
+.mon__face--right { width: 18px;  height: 120px; top: 0; }
+.mon__face--top,
+.mon__face--bottom{ width: 180px; height: 18px;  left: 0; }
+
+.mon__face--front  { background: var(--lavender); transform: translateZ(9px);  box-shadow: inset 0 0 0 3px #a78bfa; }
+.mon__face--back   { background: #c4b5fd;          transform: rotateY(180deg) translateZ(9px); }
+.mon__face--left   { background: #a78bfa;           transform: rotateY(-90deg) translateZ(0);    left: 0; }
+.mon__face--right  { background: #a78bfa;           transform: rotateY(90deg) translateZ(180px); }
+.mon__face--top    { background: #ddd6fe;            transform: rotateX(90deg) translateZ(0);   top: 0; }
+.mon__face--bottom { background: #8b5cf6;            transform: rotateX(-90deg) translateZ(120px); }
+
+/* power dot on bezel front */
+.mon__face--front::after {
+  content: '';
+  position: absolute;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #28c840;
+  border: 2px solid #000;
+  bottom: 8px; right: 12px;
+  box-shadow: 0 0 6px #28c840;
+}
+
+/* ---- screen ---- */
+.mon__screen {
+  position: absolute;
+  width: 152px;
+  height: 90px;
+  top: 12px;
+  left: 14px;
+  transform: translateZ(10px);
+  background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 40%, #a78bfa 100%);
+  border: 3px solid #000;
+  border-radius: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* fake UI bars on screen */
+.mon__screen::before {
+  content: '';
+  position: absolute;
+  top: 10px; left: 10px; right: 10px;
+  height: 8px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 4px;
+}
+.mon__screen::after {
+  content: '';
+  position: absolute;
+  top: 26px; left: 10px;
+  width: 55%; height: 6px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 4px;
+  box-shadow: 0 14px 0 rgba(255,255,255,0.12), 0 28px 0 rgba(255,255,255,0.10);
+}
+
+/* ---- neck ---- */
+.mon__neck {
+  position: absolute;
+  width: 14px;
+  height: 36px;
+  background: var(--lavender);
+  border: 3px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  left: 83px;
+  top: 120px;
+  transform: translateZ(0);
+}
+
+/* ---- base ---- */
+.mon__base {
+  position: absolute;
+  width: 80px;
+  height: 14px;
+  background: var(--lavender);
+  border: 3px solid #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  left: 50px;
+  top: 154px;
+  transform: translateZ(0);
+  box-shadow: 3px 3px 0 #000;
+}
+
+/* ---- keyboard ---- */
+.mon__kbd {
+  position: absolute;
+  width: 170px;
+  left: 5px;
+  top: 138px;
+  transform: translateZ(12px) rotateX(10deg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 8px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 0 #000;
+}
+.mon__kbd-row {
+  height: 9px;
+  background: var(--lavender);
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #6d28d9;
+}
+.mon__kbd-row--space {
+  height: 7px;
+  width: 50%;
+  margin: 0 auto;
+  background: #a78bfa;
+  box-shadow: 0 2px 0 #6d28d9;
+}
+
+/* ============================================================
    FEATURES
    ============================================================ */
 .features {
@@ -828,6 +981,32 @@ img { display: block; max-width: 100%; }
 
 .persona-card--purple ul li::before,
 .persona-card--dark ul li::before { color: var(--lavender); }
+
+.persona-card__price {
+  margin-top: 16px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  border: var(--border);
+  padding: 8px 16px;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.persona-card--lavender .persona-card__price {
+  background: #000;
+  color: #fff;
+}
+.persona-card--purple .persona-card__price {
+  background: #fff;
+  color: #000;
+}
+.persona-card__price--cta {
+  background: var(--purple);
+  color: #fff;
+  cursor: pointer;
+}
 
 /* ============================================================
    TESTIMONIALS
